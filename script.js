@@ -27,6 +27,7 @@ function showPosition(position) {
 // remove location function
 function removeLocation() {
     getLocBtn.disabled = false; // enable get location button
+    getLocBtn.style.pointerEvents = "auto";
     localStorage.removeItem("lat"); // remove lat key from localStorage
     localStorage.removeItem("long"); // remove long key from localStorage
     mapDiv.innerHTML = ""; // remove the map 
